@@ -6,7 +6,11 @@ i{display:none}
 body{color:#222;overflow:hidden;position:relative;font-size:16px;content:"w";background:#ddd}     .w{background:#ddd;filter:invert(0)}
 @media(prefers-color-scheme:dark){body[class=""]{content:"g";background:#444;filter:invert(.85)}} .g{background:#444;filter:invert(.85)}
 @media(prefers-contrast:more)    {body[class=""]{content:"b";background:#222;filter:invert(1)  }} .b{background:#222;filter:invert(1)}
-div{background:#fff;height:calc(100vh - 13ex);overflow-y:scroll;overflow-x:hidden}
+html,body{height:100%}
+body{display:flex;flex-flow:column;margin:0}
+body>*{margin: 8px}
+#y{background:#fff;height:100%;flex: 1 1 auto;position:relative;}
+#abs{overflow-y:scroll;overflow-x:hidden;position:absolute;top:0;left:0;right:0;bottom:0;height:100%;width:100%;box-sizing: border-box}
 #t{width:100%;table-layout:fixed;color:#333;white-space:pre-wrap;word-wrap: break-word}
 tr:hover td{color:#000}
 td{padding:.5em}
